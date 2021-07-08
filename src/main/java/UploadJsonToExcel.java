@@ -39,7 +39,7 @@ public class UploadJsonToExcel {
     }
 
     public static void uploadDataToExcel(JSONArray jsonData) throws IOException {
-        File file = new File("/sheik/UploadToJson.csv");
+        File file = new File("/JsonDate/UploadToJson.csv");
         String csv = CDL.toString(jsonData);
         FileUtils.writeStringToFile(file, csv);
     }
